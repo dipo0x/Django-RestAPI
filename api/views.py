@@ -35,7 +35,7 @@ class UserDetail(generics.RetrieveAPIView):
     queryset = User.objects.all()
     serializer_class = serializers.UserSerializer
 
-#I wrote class based views here mainly because of the freedom to implement whatsoever you want
+#I wrote function based views here mainly because of the freedom to implement whatsoever you want
 #Didn't add delete in general posts, still trying to figure it out
 
 @api_view(['GET', 'POST'])
